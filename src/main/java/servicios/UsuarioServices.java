@@ -1,4 +1,4 @@
-package edu.pucmm.eict.ormjpa.servicios;
+package servicios;
 import entidades.Usuario;
 
 public class UsuarioServices extends GestionDb<Usuario> {

@@ -1,4 +1,4 @@
-package edu.pucmm.eict.ormjpa.entidades;
+package entidades;
 
 import jakarta.persistence.*;
 import java.io.Serializable;
@@ -6,6 +6,7 @@ import java.math.BigDecimal;
 
 @Entity
 public class Producto implements Serializable {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -19,10 +20,10 @@ public class Producto implements Serializable {
         this.precio = precio;
     }
 
-    // Getters y Setters
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
     public String getNombre() { return nombre; }
     public void setNombre(String nombre) { this.nombre = nombre; }
     public BigDecimal getPrecio() { return precio; }
     public void setPrecio(BigDecimal precio) { this.precio = precio; }
+}

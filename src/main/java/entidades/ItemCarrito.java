@@ -1,10 +1,9 @@
-import entidades.Producto;
+package entidades;
 
-Itemcarrito · JAVA
-package edu.pucmm.eict.ormjpa.entidades;
+import java.io.Serializable;
 
-// representará el Carrito en la memoria HTTP sesion
-public class ItemCarrito {
+// representa un item del carrito guardado en sesión HTTP
+public class ItemCarrito implements Serializable {
     private Producto producto;
     private int cantidad;
 
@@ -13,10 +12,8 @@ public class ItemCarrito {
         this.cantidad = cantidad;
     }
 
-    // Getters y Setters
     public Producto getProducto() { return producto; }
     public void setProducto(Producto producto) { this.producto = producto; }
     public int getCantidad() { return cantidad; }
     public void setCantidad(int cantidad) { this.cantidad = cantidad; }
 }
- 
