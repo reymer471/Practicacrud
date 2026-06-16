@@ -1,5 +1,5 @@
 package edu.pucmm.eict.ormjpa.servicios;
-import edu.pucmm.eict.ormjpa.entidades.Producto;
+import entidades.Producto;
 
 public class ProductoServices extends GestionDb<Producto> {
     private static ProductoServices instancia;

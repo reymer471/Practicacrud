@@ -1,5 +1,5 @@
 package edu.pucmm.eict.ormjpa.servicios;
-import edu.pucmm.eict.ormjpa.entidades.Usuario;
+import entidades.Usuario;
 
 public class UsuarioServices extends GestionDb<Usuario> {
     private static UsuarioServices instancia;
